@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Born2beRoot
+  structure:
+    - type: space
+      key: born2beroot
+      title: Born2beRoot
+      path: born2beroot
+      default: true
+      content:
+        directory: ./

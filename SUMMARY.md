@@ -12,11 +12,11 @@
 
 * [First boot, sudo and groups](configuration/sudo-and-groups.md)
 * [SSH](configuration/ssh.md)
-* [UFW firewall](configuration/ufw.md)
-* [Password policy](configuration/password-policy.md)
+* [UFW 🔥🧱 firewall](configuration/ufw.md)
+* [Password policy 🔑](configuration/password-policy.md)
 * [Sudo rules](configuration/sudoers.md)
 * [AppArmor](configuration/apparmor.md)
-* [monitoring.sh script](configuration/monitoring.md)
+* [monitoring.sh script 🚨](configuration/monitoring.md)
 * [Cron](configuration/cron.md)
 
 ## Submission

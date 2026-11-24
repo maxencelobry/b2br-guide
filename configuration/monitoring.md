@@ -1,4 +1,4 @@
-# monitoring.sh script
+# monitoring.sh script 🚨
 
 The subject asks for a **bash** script named `monitoring.sh`. It is displayed on every terminal at server startup, then every 10 minutes. **No error may be displayed.**
 

@@ -29,7 +29,7 @@ Many guides online were written for Debian 11 or 12 and an older subject. The di
 
 ## How to read this guide
 
-Follow the pages in the order of the table of contents. Each page ends with a **Check** section: run those commands before moving on.
+Follow the pages in the order of the table of contents and start the Born2beRoot guide! 😎 Each page ends with a **Check** section: run those commands before moving on.
 
 In every command, replace `login` with your 42 login.
 

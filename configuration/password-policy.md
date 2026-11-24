@@ -1,4 +1,4 @@
-# Password policy
+# Password policy 🔑
 
 ## What the subject asks for
 
@@ -57,14 +57,14 @@ password  requisite  pam_pwquality.so retry=3 minlen=10 ucredit=-1 lcredit=-1 dc
 
 | Option | Effect |
 | --- | --- |
-| `minlen=10` | at least 10 characters |
-| `ucredit=-1` | at least one uppercase letter |
-| `lcredit=-1` | at least one lowercase letter |
-| `dcredit=-1` | at least one digit |
-| `maxrepeat=3` | no more than 3 identical characters in a row |
-| `reject_username` | rejects the user name inside the password |
-| `difok=7` | 7 characters that differ from the previous password |
-| `enforce_for_root` | applies these rules to root as well |
+| `minlen=10` | ➤ at least 10 characters |
+| `ucredit=-1` | ➤ at least one uppercase letter |
+| `lcredit=-1` | ➤ at least one lowercase letter |
+| `dcredit=-1` | ➤ at least one digit |
+| `maxrepeat=3` | ➤ no more than 3 identical characters in a row |
+| `reject_username` | ➤ rejects the user name inside the password |
+| `difok=7` | ➤ 7 characters that differ from the previous password |
+| `enforce_for_root` | ➤ applies these rules to root as well |
 
 **Why `difok` does not apply to root**: when root changes a password, the old one is not asked. The module has nothing to compare against, so the 7-character rule is skipped. That is exactly the exception described in the subject.
 

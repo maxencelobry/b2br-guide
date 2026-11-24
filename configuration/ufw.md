@@ -1,4 +1,4 @@
-# UFW firewall
+# UFW 🔥🧱 firewall
 
 The subject asks for UFW, **active at startup**, with **only port 4242 open**.
 

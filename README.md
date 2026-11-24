@@ -2,6 +2,8 @@
 
 A step-by-step guide for the 42 **Born2beRoot** project, aligned with **subject version 1.3** and **Debian 13 (trixie)**.
 
+Read it online: [lobry-maxence.gitbook.io/born2beroot](https://lobry-maxence.gitbook.io/born2beroot)
+
 ## What changed compared to older guides
 
 Many guides online were written for Debian 11 or 12 and an older subject. The differences that matter:

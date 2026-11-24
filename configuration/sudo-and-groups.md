@@ -57,3 +57,5 @@ getent group sudo user42
 ```
 
 `sudo whoami` must print `root`. The second command must list your login in both groups.
+
+<figure><img src="../.gitbook/assets/40-groups.png" alt="getent output listing login in sudo and user42"><figcaption></figcaption></figure>

@@ -48,3 +48,5 @@ To                         Action      From
 ```
 
 Only the `4242` rules must appear, and `is-enabled` must answer `enabled`.
+
+<figure><img src="../.gitbook/assets/43-ufw.png" alt="ufw status showing only port 4242 and enabled at startup"><figcaption></figcaption></figure>

@@ -8,7 +8,7 @@ The script must be displayed **at server startup** and then **every 10 minutes**
 systemctl status cron
 ```
 
-If it is missing:
+It is installed and active by default on Debian 13. If it is missing:
 
 ```bash
 sudo apt install cron
@@ -29,8 +29,11 @@ Add these two lines at the end:
 */10 * * * * bash /usr/local/bin/monitoring.sh
 ```
 
-- `@reboot` runs the script once at startup.
-- `*/10 * * * *` runs it every 10 minutes.
+{% hint style="info" %}
+<mark style="color:green;">@reboot</mark> ➤ runs the script once at startup.
+
+<mark style="color:green;">*/10 * * * *</mark> ➤ runs it every 10 minutes.
+{% endhint %}
 
 {% hint style="warning" %}
 Run the script with `bash`, not `sh`. On Debian, `sh` is `dash`, and the subject asks for a bash script.
@@ -53,6 +56,8 @@ At startup nobody is logged in yet: the `@reboot` message is sent, but no termin
 ```
 
 `*/10` in the minute field means "every minute divisible by 10": 0, 10, 20, 30, 40, 50.
+
+{% embed url="https://crontab.guru/" %}
 
 ## For the defense
 
@@ -84,4 +89,14 @@ sudo systemctl enable --now cron
 sudo crontab -u root -l
 ```
 
-Both lines must appear. Wait for the next ten-minute mark: the message must show up on your terminal by itself.
+Both lines must appear:
+
+<figure><img src="../.gitbook/assets/56-crontab.png" alt="Root crontab with the two monitoring lines"><figcaption></figcaption></figure>
+
+Wait for the next ten-minute mark: the message must show up on your terminal by itself.
+
+<figure><img src="../.gitbook/assets/58-cron-wall.png" alt="Broadcast message sent by cron"><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+A message sent by cron shows `(somewhere)` instead of a terminal name in its first line: cron has no terminal of its own.
+{% endhint %}

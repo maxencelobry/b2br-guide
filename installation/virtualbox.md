@@ -22,7 +22,7 @@ The virtual disk takes several gigabytes. On 42 workstations the home quota is l
 8. **Hard disk**: create a virtual hard disk, **VDI** format, dynamically allocated, **12 GB**.
 
 {% hint style="info" %}
-The subject asks you to pick sensible partition sizes without wasting space. A minimal Debian server uses about 1.5 GB: 8 to 12 GB of disk is plenty.
+The subject asks you to pick sensible partition sizes without wasting space. A minimal Debian server uses about 1 GB, but the guided encrypted LVM scheme with a separate `/home` needs at least <mark style="color:green;">9 GB</mark>: 12 GB is a safe choice.
 {% endhint %}
 
 ## Attach the ISO

@@ -11,6 +11,8 @@ systemctl is-enabled apparmor
 
 `aa-status` must start with `apparmor module is loaded.` and `is-enabled` must answer `enabled`.
 
+<figure><img src="../.gitbook/assets/49-apparmor.png" alt="aa-status output and enabled service"><figcaption></figcaption></figure>
+
 If AppArmor is missing:
 
 ```bash

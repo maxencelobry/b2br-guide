@@ -18,6 +18,8 @@ sudo nano /etc/ssh/sshd_config
 
 Change these two lines (remove the leading `#`):
 
+> Change: `#Port 22` → `Port 4242` and `#PermitRootLogin prohibit-password` → `PermitRootLogin no`.
+
 ```
 Port 4242
 PermitRootLogin no
@@ -53,6 +55,8 @@ sudo ss -tlnp | grep sshd
 ```
 
 The service must be `active (running)` and listen on port `4242`.
+
+<figure><img src="../.gitbook/assets/42-ssh.png" alt="sshd_config values, service status and listening port 4242"><figcaption></figcaption></figure>
 
 From the host, root login must be refused:
 
